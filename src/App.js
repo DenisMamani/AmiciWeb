@@ -11,7 +11,7 @@ function App() {
             aria-controls="offcanvasNavbar">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+          <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div className="offcanvas-header">
               <div className="logoBlanco">logo</div>
@@ -24,7 +24,7 @@ function App() {
                   <a className="nav" href="index.html">Inicio</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav" href="./secciones/contacto.html">Contacto</a>
+                  <a className="nav" href="">Contacto</a>
                 </li>
                 </ul>
             </div>
