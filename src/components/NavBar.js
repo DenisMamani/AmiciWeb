@@ -24,13 +24,10 @@ const NavBar=()=>{
                 <li className="nav-item">
                   <a className="nav" href="">Contacto</a>
                 </li>
-                <li>
-                <CartWidget/>
-                </li>
                 </ul>
-                
             </div>
           </div>
+          <CartWidget/>
         </div>
       </nav>
       </>
