@@ -5,16 +5,13 @@ const handleRate=()=>{
     setRate(cantidad+1);
 }
 const decrementar=()=>{
-    if(cantidad>0){
-    setRate (cantidad-1);}
-    else{
-    }
+    setRate (cantidad-1);
 }
     return(
         <>
-            <button className="btnProduct" onClick={decrementar}>Decrementar</button>
+            <button className="btnProduct" disabled={cantidad<=0} onClick={decrementar}>Decrementar</button>
             {cantidad} producto
-            <button className="btnProduct" onClick={handleRate}>Incrementar</button>
+            <button className="btnProduct" disabled={cantidad >=10} onClick={handleRate}>Incrementar</button>
         </>
     );
 }
