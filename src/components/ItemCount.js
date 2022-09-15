@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { VscAdd,VscChromeMinimize } from "react-icons/vsc";
+import getList from "../utils/getProducts";
 const ITemCount=()=>{
 const[cantidad,setRate]=useState(0);
 const handleRate=()=>{
@@ -9,9 +11,11 @@ const decrementar=()=>{
 }
     return(
         <>
-            <button className="btnProduct" disabled={cantidad<=0} onClick={decrementar}>Decrementar</button>
-            {cantidad} producto
-            <button className="btnProduct" disabled={cantidad >=10} onClick={handleRate}>Incrementar</button>
+            <div className="styleCount">
+                <button className="btnProduct" disabled={cantidad<=0} onClick={decrementar}><VscChromeMinimize/></button>
+                {cantidad}
+                <button className="btnProduct" disabled={cantidad >=10} onClick={handleRate}><VscAdd/></button>
+            </div>
         </>
     );
 }
