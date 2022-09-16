@@ -1,5 +1,8 @@
 import ITemCount from "./ItemCount";
 const Item=({product})=>{
+  const onAdd=(cantidadProducto)=>{
+    alert(`Compraste ${cantidadProducto} unidades`)
+  }
     return(
        <div>
         <div className="cardProducto">
@@ -9,8 +12,7 @@ const Item=({product})=>{
           <p className="priceProduct">Precio: ${product.price} </p>
           <p className="stock">Cantidad Disponible: {product.stock}</p>
           <button className="btnDetalles">Ver detalles</button>
-          <ITemCount/>
-          <button className="btnGuardar">Guardar en el carrito</button>
+          <ITemCount initial={1} stock={product.stock} onAdd={onAdd}/>
         </div>
       </div>
        </div> 
