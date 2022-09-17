@@ -1,7 +1,7 @@
 import ITemCount from "./ItemCount";
 const Item=({product})=>{
   const onAdd=(cantidadProducto)=>{
-    alert(`Compraste ${cantidadProducto} unidades`)
+    alert(`Seleccionaste ${cantidadProducto} unidades`)
   }
     return(
        <div>

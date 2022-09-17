@@ -1,3 +1,6 @@
+.body{
+  background-color: #212529;
+}
 .header {
   background-color: #0a0a0a;
   box-shadow: #ffffff 0px 0px 10px 0px;
@@ -28,7 +31,7 @@
 }
 .cargando{
   margin: auto;
-
+  color: #ffffff;
 }
 /*PRODUCTOS*/
 
@@ -76,9 +79,9 @@ border-radius: 6px;
   color: #080808;
   background-color: #ffffff;
   border-radius: 5px;
-  width: 90%;
+  width: 20%;
   padding: 6px 5px;
-  margin-top: 25px;
+  margin-top: 2 5px;
 }
 .stock{
   color: #ffffff;
@@ -95,5 +98,47 @@ border-radius: 6px;
 .styleCount{
   margin: 20px 0px;
   justify-items: flex-start;
+  color: #ffffff;
+}
+/*Item Details*/
+.productDetail{
+  border-radius: 15px;
+  width: 28rem;
+  margin: 20px 0px 20px 20px;
+}
+.containerItem{
+  display: flex;
+  justify-content: center;
+  width: 80rem;
+  height: 35rem;
+  border: #ffffff solid 2px;
+  margin: 100px auto;
+  border-radius: 5px;
+  border: #ffffff 2px solid;
+  gap: 100px;
+}
+.detailProduct{
+  text-align: center;
+  margin: 20px 0px;
+  border-left: #464343 1px solid;
+}
+.textDetail{
+  color: #ffffff;
+}
+.title{
+font-size: 50px;
+letter-spacing: 9px;
+}
+.price{
+  font-size: 40px;
+}
+.description{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.5;
+  margin-top: 70px;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.cantidad{
   color: #ffffff;
 }

@@ -15,7 +15,7 @@ useEffect(()=>{
         <>
             <div className="styleCount">
                 <button className="btnProduct" disabled={cantidad<=1} onClick={decrementar}><VscChromeMinimize/></button>
-                <span>{cantidad}</span>
+                <span className="cantidad">{cantidad}</span>
                 <button className="btnProduct" disabled={cantidad >=stock} onClick={incrementar}><VscAdd/></button>
                 <button className="btnGuardar" disabled={stock<=0} onClick={()=> onAdd(cantidad)} >Agregar a carrito</button>
             </div>

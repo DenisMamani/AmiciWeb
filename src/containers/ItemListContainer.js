@@ -1,20 +1,21 @@
 import { useEffect, useState } from "react";
 import ItemList from "../components/ItemList";
-import getList from "../utils/getProducts";
+import customFetch from "../utils/customFetch";
+import { products } from "../utils/products";
 const ItemListContainer= ()=>{
-    const [arrayList,setArrayList]=useState([]);
+    const [datos,setDatos]=useState([]);
     const [loading,setLoading] = useState(false);
     useEffect(()=>{
         setLoading(true);
-        getList()
-        .then((response)=> setArrayList(response))
+        customFetch(2000, products)
+        .then((response)=> setDatos(response))
         .catch((err)=>console.log(err))
         .finally(()=> setLoading(false))
     },[])
 
 return(
     <>
-    {loading ? <h1 className="cargando">Cargando...</h1> : <ItemList products={arrayList} />}
+    {loading ? <h1 className="cargando">Cargando...</h1> : <ItemList items={datos} />}
     </>
 );
 }
