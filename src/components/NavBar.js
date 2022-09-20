@@ -13,17 +13,9 @@ const NavBar=()=>{
           <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div className="offcanvas-body lista">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <Link to="/category/1">Tecnologia</Link>
-                </li>
-                <li className="nav-item">
-                <Link to="/category/2">Electrodomesticos</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/category/3">Herramientas</Link>
-                </li>
-                </ul>
+                <Link className="category" to="/category/1">Tecnologia</Link>
+                <Link className="category" to="/category/2">Electrodomesticos</Link>
+                <Link className="category" to="/category/3">Herramientas</Link>
             </div>
           </div>
           <CartWidget/>

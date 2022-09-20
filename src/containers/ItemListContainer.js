@@ -10,7 +10,7 @@ const ItemListContainer= ()=>{
     useEffect(()=>{
         setLoading(true);
         if(id){
-            customFetch(2000, products.filter(item=>item.categoryId== id))
+            customFetch(2000, products.filter(item=>item.categoryId == id))
             .then((response)=> setDatos(response))
             .catch((err)=>console.log(err))
             .finally(()=> setLoading(false))

@@ -12,11 +12,11 @@ const Item=({product})=>{
         <h5 className="titleProduct">{product.title}</h5>
           <p className="priceProduct">Precio: ${product.price} </p>
           <p className="stock">Cantidad Disponible: {product.stock}</p>
-          <Link to={"/item/"+ product.id} className="btnDetalles">Ver detalles</Link>
+          <Link to={"/item/"+ product.id}> <button className="btnDetalles">Ver detalles</button></Link>
           <ITemCount initial={1} stock={product.stock} onAdd={onAdd}/>
         </div>
       </div>
        </div> 
-    )
+    ) 
 }
 export default Item;

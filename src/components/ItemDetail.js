@@ -6,7 +6,7 @@ const ItemDetail = ({item}) => {
         alert(`Seleccionaste ${cantidadProducto} unidades`)
       }
     return (
-        <div className='containerItem'>
+        <div className='detailContainer'>
             <img src={item.img} alt="producto" className='productDetail' />
             <div className='detailProduct'>
                 <h1 className='textDetail title'>{item.title}</h1>
