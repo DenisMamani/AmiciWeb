@@ -1,18 +1,19 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
-import ItemDetailContainer from './components/ItemDetailContainer';
-//import ItemListContainer from './containers/ItemListContainer';
-
+import ItemDetailContainer from './containers/ItemDetailContainer';
+import ItemListContainer from './containers/ItemListContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <>
-    <NavBar/>
-    <div className="ordenarProducts">
-     {/* <ItemListContainer/>  */}
-    </div>
-    <ItemDetailContainer/> 
-    </>
+    <BrowserRouter>
+      <NavBar/>
+        <Routes>
+          <Route path="/" element={<ItemListContainer/>}/>
+          <Route path="/category/:id" element={<ItemDetailContainer/>}/>
+          <Route path="/item/:id" element={<ItemDetailContainer/>}/>
+        </Routes>
+    </BrowserRouter>
   );
 }
 
