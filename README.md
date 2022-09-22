@@ -1,6 +1,6 @@
-# ### AmiciWeb
+# AmiciWeb
 ------------
-#### ## Proyecto e-commerce **AmiciWeb.**
+####  Proyecto e-commerce **AmiciWeb.**
 ------------
 Se uso librerias y Frameworks, tales como:
 - Bootstrap v5.1
