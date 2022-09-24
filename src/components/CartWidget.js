@@ -1,8 +1,9 @@
 import {IoMdCart} from 'react-icons/io';
+import { Link } from 'react-router-dom';
 const CartWidget=()=>{
     return(
         <>
-        <IoMdCart className='logoCarrito'/>
+        <Link to="/cart"><IoMdCart className='logoCarrito'/></Link>
         </>
     );
 }

@@ -36,6 +36,13 @@
   padding: 10px;
   border-radius: 100%;
   font-size: 50px;
+  text-decoration: none;
+  color: #000000;
+}
+.logoCarrito:hover{
+  transition: 1s;
+  background-color: #212529;
+  color: #ffffff;
 }
 .cargando{
   margin: auto;
