@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { cartContext } from './CartContext';
 import ItemCount from './ItemCount';
 
 const ItemDetail = ({item}) => {
-    const [goToCart,setGoToCart]=useState(0)
-    const onAdd=(cantidadProducto)=>{
-        alert(`Seleccionaste ${cantidadProducto} unidades`)
-        setGoToCart(cantidadProducto)
-      }
+    const {addToCart,isInCart,removeItem} =useContext(cartContext)
+    const onAdd =(count)=>{
+            console.log(`Agregaste ${count} unidad/es.`);
+            addToCart(item,count)
+    }
     return (
         <div className='detailContainer'>
             <img src={item.img} alt="producto" className='productDetail' />
@@ -15,9 +16,19 @@ const ItemDetail = ({item}) => {
                 <h1 className='textDetail title'>{item.title}</h1>
                 <h4 className='textDetail price'>${item.price}</h4>
                 <p className='textDetail description'>{item.description}</p>
-                {   goToCart===0 ?
-                    <ItemCount initial={1} stock={item.stock} onAdd={onAdd}></ItemCount>
-                    : <Link to='/cart'><button className='verificar'>Verificar</button></Link>
+                {isInCart(item.id)? 
+                <div>
+                    <p className='textoCarritoItem'>
+                        Ya en el carrito!
+                    </p>
+                    <button className='deleteCartDetail' onClick={()=>removeItem(item.id)}>Eliminar del Carrito</button>
+                </div>
+                :
+                <p className='textoCarritoItem'>Añadir Ahora!</p>    
+            }
+                {   (isInCart(item.id)) ?
+                    <Link to='/cart'><button className='verificar'>Go to cart</button></Link>
+                    :<ItemCount initial={1} stock={item.stock} onAdd={onAdd}></ItemCount>
                 }
             </div>
         </div>

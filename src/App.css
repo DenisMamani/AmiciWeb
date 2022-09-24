@@ -42,7 +42,7 @@
   color: #ffffff;
 }
 
-/*PRODUCTOS*/
+/*lista de PRODUCTOS*/
 .ordenarProducts{
   display: flex;
   justify-content: space-between;
@@ -65,6 +65,8 @@ background-color: #ffffff;
   flex-direction: column;
   background-color: #0a0a0a;
   align-items: center;
+  height: 300px;
+  justify-content: center;
 }
 .titleProduct{
   color: #ffffff;
@@ -80,8 +82,11 @@ background-color: #ffffff;
   color: #ffffff;
   background-color: #0a0a0a;
   border-radius: 5px;
-  width: 200px;
-  padding: 6px 0px;
+  width: 250px;
+  padding: 10px 0px;
+  margin-top: 50px;
+  font-size: 18px;
+  letter-spacing: 3px;
 }
 .btnGuardar{
   font-weight: bolder;
@@ -121,7 +126,7 @@ background-color: #ffffff;
   display: flex;
   align-items: center;
   width: 80rem;
-  height: 35rem;
+  height: 38rem;
   border: #ffffff solid 2px;
   margin: 100px auto;
   border-radius: 5px;
@@ -153,9 +158,32 @@ letter-spacing: 9px;
 .cantidad{
   color: #ffffff;
 }
+.deleteCartDetail{
+  background-color: #941111;
+  border-radius: 5px;
+  padding: 8px 5px;
+  width: 200px;
+  margin-bottom: 20px;
+  color: aliceblue;
+  border: solid 1px #5a6868
+}
+
 /*CART*/
+.ordenarCartItem{
+  text-align: center;
+  margin: 150px 30% 0;
+  border: #5e5858 solid 2px;
+}
+.productsCart{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #5e5858 solid 2px;
+  padding: 30px 10px;
+  align-items: center;
+}
 .titleCart{
   color: #ffffff;
+
 }
 .verificar{
   letter-spacing: 4px;
@@ -173,4 +201,50 @@ letter-spacing: 9px;
   color: #000000;
   background-color: #ffffff;
   border: #000000 solid 2px;
+}
+.btnEliminarTodo{
+  background-color: #941111;
+  border-radius: 5px;
+  padding: 8px 5px;
+  width: 200px;
+  margin: 20px 0px 8px;
+  color: aliceblue;
+  border: solid 1px #5a6868
+}
+.btnEliminarItem{
+  background-color: #941111;
+  border-radius: 5px;
+  width: 100px;
+  color: aliceblue;
+  border: solid 1px #5a6868
+}
+/*producto en el carrito*/
+.titleProductCart{
+  color: aliceblue;
+  margin: 0;
+}
+.cantProductCart{
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+.textoCarritoItem{
+  font-size: 20px;
+  color: rgb(88, 87, 100);
+  font-weight: lighter;
+}
+.homeCart{
+  color: aliceblue;
+  font-size: 50px;
+  margin: 50px 40%;
+}
+.cartVacio{
+  text-align: center;
+  color: #ffffff;
+  font-size: 50px;
+  margin: 50px 36%;
+}
+.home{
+  text-decoration: none;
+  color: aliceblue;
 }
