@@ -6,7 +6,7 @@ import ItemCount from './ItemCount';
 const ItemDetail = ({item}) => {
     const {addToCart,isInCart,removeItem} =useContext(cartContext)
     const onAdd =(count)=>{
-            console.log(`Agregaste ${count} unidad/es.`);
+           alert(`Agregaste ${count} unidad/es.`);
             addToCart(item,count)
     }
     return (
@@ -27,7 +27,7 @@ const ItemDetail = ({item}) => {
                 <p className='textoCarritoItem'>Añadir Ahora!</p>    
             }
                 {   (isInCart(item.id)) ?
-                    <Link to='/cart'><button className='verificar'>Go to cart</button></Link>
+                    <Link to='/cart'><button className='verificar'>Ir al carrito</button></Link>
                     :<ItemCount initial={1} stock={item.stock} onAdd={onAdd}></ItemCount>
                 }
             </div>

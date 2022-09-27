@@ -3,7 +3,7 @@ import { cartContext } from "./CartContext"
 import { Link } from "react-router-dom"
 import CartItem from './CartItem';
 const Cart=()=>{
-    const {cart,clearCart}=useContext(cartContext)
+    const {cart,clearCart,totalProductsPrice}=useContext(cartContext)
     return(
         <>
          {cart.length === 0 ?
@@ -14,7 +14,9 @@ const Cart=()=>{
         :
         <div className="ordenarCartItem">
           {cart.map(element => <CartItem key={element.item.id} prod={element} />)}
+          <p className="totalPrecio">Total: ${totalProductsPrice()}</p>
           <button className="btnEliminarTodo" onClick={() => clearCart()}>Eliminar Todo</button>
+          <button className="btnConfirmar">Confirmar</button>
         </div>
       }
         </>

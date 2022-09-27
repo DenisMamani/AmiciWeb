@@ -1,5 +1,5 @@
 .body{
-  background-color: #212529;
+  background-color: #000000e8;
 }
 .header {
   background-color: #0a0a0a;
@@ -10,7 +10,9 @@
   left: 0;
   z-index: 1; }
 .offcanvas {
-  background-color: #212529; }
+  background-color: #212529; 
+  
+}
   .offcanvas .offcanvas-header {
     align-items: start;
     border-bottom: 1px solid #5e5858; } 
@@ -36,7 +38,6 @@
   padding: 10px;
   border-radius: 100%;
   font-size: 50px;
-  text-decoration: none;
   color: #000000;
 }
 .logoCarrito:hover{
@@ -139,6 +140,7 @@ background-color: #ffffff;
   border-radius: 5px;
   border: #ffffff 2px solid;
   gap: 100px;
+  background-color: black;
 }
 .detailProduct{
   text-align: center;
@@ -180,11 +182,13 @@ letter-spacing: 9px;
   text-align: center;
   margin: 150px 30% 0;
   border: #5e5858 solid 2px;
+  background-color: #020202e6;
+  padding: 10px;
 }
 .productsCart{
   display: flex;
   justify-content: space-between;
-  border-bottom: #5e5858 solid 2px;
+  border-bottom: #ececec5e solid 1px;
   padding: 30px 10px;
   align-items: center;
 }
@@ -209,21 +213,13 @@ letter-spacing: 9px;
   background-color: #ffffff;
   border: #000000 solid 2px;
 }
-.btnEliminarTodo{
-  background-color: #941111;
-  border-radius: 5px;
-  padding: 8px 5px;
-  width: 200px;
-  margin: 20px 0px 8px;
-  color: aliceblue;
-  border: solid 1px #5a6868
-}
-.btnEliminarItem{
-  background-color: #941111;
-  border-radius: 5px;
-  width: 100px;
-  color: aliceblue;
-  border: solid 1px #5a6868
+.contadorCart{
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 100%;
+  padding: 0px 10px;
+  margin-left: 8px;
+  font-size: 18px;
 }
 /*producto en el carrito*/
 .titleProductCart{
@@ -251,7 +247,63 @@ letter-spacing: 9px;
   font-size: 50px;
   margin: 50px 36%;
 }
+.btnEliminarTodo{
+  font-size: 18px;
+  letter-spacing: 4px;
+  background-color: #941111;
+  border-radius: 5px;
+  padding: 8px 5px;
+  width: 200px;
+  margin: 20px 0px 8px;
+  color: aliceblue;
+  border: solid 1px #5a6868
+}
+.btnEliminarItem{
+  background-color: #941111;
+  border-radius: 5px;
+  width: 100px;
+  color: aliceblue;
+  border: solid 1px #5a6868
+}
+.btnEliminarTodo:hover{
+  background-color: #f10000bb;
+  color: white;
+  transition: 1s;
+}
 .home{
   text-decoration: none;
   color: aliceblue;
+}
+.totalPrecio{
+  position: absolute;
+  margin: 25px 0 0 242px;
+  font-size: 25px;
+  color: aliceblue;
+  letter-spacing: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.subTotal{
+  margin: 0;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+  font-family: 'Times New Roman', Times, serif;
+}
+.btnConfirmar{
+  font-size: 18px;
+  letter-spacing: 4px;
+  background-color: #171616;
+  border: #000000 solid 1px;
+  border-radius: 5px;
+  padding: 8px 5px;
+  width: 200px;
+  margin: 20px 0px 8px;
+  color: rgb(255, 255, 255);
+  border: solid 1px #fff;
+  margin-left: 40%;
+  margin-bottom: 20px;
+}
+.btnConfirmar:hover{
+background-color: rgb(0, 0, 0);
+color: #ffffff;
+transition: 1s;
 }

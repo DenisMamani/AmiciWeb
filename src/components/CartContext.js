@@ -23,8 +23,14 @@ const isInCart =(id)=>{
 const clearCart=()=>{
     setCart([])
 }
+const cantInCart=()=>{
+    return cart.reduce((acum,itemCart)=> acum+ itemCart.count, 0)
+}
+const totalProductsPrice=()=>{
+    return cart.reduce((acum,itemCart)=> acum+(itemCart.item.price * itemCart.count),0)
+}
 const value={
-cart,addToCart,removeItem,clearCart,isInCart
+cart,addToCart,removeItem,clearCart,isInCart,cantInCart,totalProductsPrice
 }
 return(
    <cartContext.Provider value={value}>
