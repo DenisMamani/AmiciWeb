@@ -5,6 +5,7 @@ import CartItem from './CartItem';
 import { increment, serverTimestamp } from "firebase/firestore";
 import { doc, setDoc, collection, updateDoc } from "firebase/firestore";
 import { db } from "../utils/FireBase";
+import Swal from "sweetalert2";
 const Cart=()=>{
     const {cart,clearCart,totalProductsPrice}=useContext(cartContext)
     let test = {cart,clearCart,totalProductsPrice}
@@ -34,7 +35,13 @@ const Cart=()=>{
       });
       });
       test.clearCart()
-      alert('la orden ha sido creada' + newOrderRef.id)
+      Swal.fire({
+        icon: 'success',
+        title: 'Compra Finalizada!',
+        text: 'Gracias por su compra!',
+        background: '#262525',
+        color: 'white',
+      })
     }
     return(
         <>

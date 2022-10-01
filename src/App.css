@@ -49,7 +49,9 @@
   margin: auto;
   color: #ffffff;
 }
-
+.swal2-styled{
+  background-color: #941111;
+}
 /*lista de PRODUCTOS*/
 .ordenarProducts{
   display: flex;
