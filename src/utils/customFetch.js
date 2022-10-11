@@ -1,5 +1,5 @@
 const customFetch=(time,task)=>{
-    return new Promise((resolve,reject)=>{
+    return new Promise((resolve)=>{
         setTimeout(()=>{
             resolve (task);
         },time)

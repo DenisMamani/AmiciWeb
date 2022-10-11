@@ -1,9 +1,6 @@
 
 import { Link } from "react-router-dom";
 const Item=({product})=>{
-  const onAdd=(cantidadProducto)=>{
-    alert(`Seleccionaste ${cantidadProducto} unidades`)
-  }
     return(
        <div>
         <div className="cardProducto">

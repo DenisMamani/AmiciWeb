@@ -36,7 +36,7 @@ const products= [
         price: 7400,
         description: "Potencia de 2000w. Trae luz indicadora de funcionamiento. Cuenta con base giratoria. Con apagado automático",
         img: "https://http2.mlstatic.com/D_NQ_NP_737702-MLA40088738103_122019-O.webp",
-        stock:50,
+        stock: 50,
         name: "electrodomesticos"
     },
     {
@@ -76,7 +76,7 @@ const products= [
         price: 32000,
         description: "Incluye máscara fotosensible ST-1X, 4 escuadras magnéticas de 2 pulgadas , 15 electrodos de 2.50mm, pinza porta electrodos, pinza masa y piqueta/cepillo",
         img: "https://http2.mlstatic.com/D_NQ_NP_620290-MLA42828398293_072020-O.webp",
-        stock: 12,
+        stock: 30,
         name:"herramientas"
     },
     {

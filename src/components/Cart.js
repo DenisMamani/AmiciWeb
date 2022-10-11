@@ -47,7 +47,7 @@ const Cart=()=>{
         <>
          {cart.length === 0 ?
         <div className="cartVacio">
-        <p className="home">Carrito Vacio</p>
+        <p className="home">Carrito Vacío</p>
           <Link className="home" to='/'>ir a Inicio</Link>
         </div>
         :

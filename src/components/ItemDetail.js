@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { cartContext } from './CartContext';
 import ItemCount from './ItemCount';
-
 const ItemDetail = ({item}) => {
     const {addToCart,isInCart,removeItem} =useContext(cartContext)
     const onAdd =(count)=>{
@@ -11,7 +10,7 @@ const ItemDetail = ({item}) => {
     }
     return (
         <div className='detailContainer'>
-            <img src={item.img} alt="producto" className='productDetail' />
+            <img src={item.img} alt="producto" className='imgDetail' />
             <div className='detailProduct'>
                 <h1 className='textDetail title'>{item.title}</h1>
                 <h4 className='textDetail price'>${item.price}</h4>

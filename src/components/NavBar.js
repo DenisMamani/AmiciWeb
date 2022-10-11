@@ -13,7 +13,7 @@ const NavBar=()=>{
           <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div className="offcanvas-body lista">
-                <Link className="category" to="/category/1">Tecnologia</Link>
+                <Link className="category" to="/category/1">Tecnología</Link>
                 <Link className="category" to="/category/2">Electrodomesticos</Link>
                 <Link className="category" to="/category/3">Herramientas</Link>
             </div>

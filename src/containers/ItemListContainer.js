@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import ItemList from "../components/ItemList";
 import { collection, getDocs,query,where } from "firebase/firestore";
 import { db } from "../utils/FireBase";
+import Loading from "../components/Loading";
 const ItemListContainer= ()=>{
     const [datos,setDatos]=useState([]);
     const [loading,setLoading] = useState(false);
@@ -36,7 +37,7 @@ const ItemListContainer= ()=>{
     },[]);
 return(
     <>
-    {loading ? <h1 className="cargando">Cargando...</h1> : <ItemList items={datos} />}
+    {loading ? <Loading/>: <ItemList items={datos} />}
     </>
 );
 }
