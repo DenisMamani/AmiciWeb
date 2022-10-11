@@ -15,7 +15,7 @@ Necesitas tener instalado el [NodeJS](https://nodejs.org/es/).
 Para el arranque del proyecto necesitas instalar sus dependencias.
 
 ```
-npm-i
+npm i
 ```
 
 ## Despliegue 📦
