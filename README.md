@@ -1,15 +1,43 @@
 # AmiciWeb
-------------
-####  Proyecto e-commerce **AmiciWeb.**
-------------
-Se uso librerias y Frameworks, tales como:
-- Bootstrap v5.1
-- react-dom v18.2.0
--  react-router-dom": v6.4.0
-- react-icons": v4.4.0
-Estas se encuentran en el package.json.
-------------
-> Si desea descargar el proyecto y ejecutarlo, debera instalar su "node_modules".
-Esto se logra una vez que usted abra el proyecto y en la terminal escriba el siguiente codigo: "npm i". Una vez instalado podra ejecutarlo.Esto se logra una vez que usted abra el proyecto y en la terminal escriba el siguiente codigo: "npm i". Una vez instalado podra ejecutarlo.
 
+Proyecto e-commerce destinado a la venta de productos.
+
+## Comenzando 🚀
+
+Si deseas tener una copia en tu computadora local, debes bajarte el archivo zip.
+
+[![Captura-de-pantalla-2022-10-05-173914.png](https://i.postimg.cc/T1hrhjgy/Captura-de-pantalla-2022-10-05-173914.png)](https://postimg.cc/RJ53DHP9)
+
+### Pre-requisitos 📋
+Necesitas tener instalado el [NodeJS](https://nodejs.org/es/).
+### Instalación 🔧
+
+Para el arranque del proyecto necesitas instalar sus dependencias.
+
+```
+npm-i
+```
+
+## Despliegue 📦
+
+Una vez instalado sus dependencias podras correr el proyecto escribiendo el siguiente codigo.
+```
+npm start
+```
+
+## Construido con 🛠️
+* HTML
+* JavaScript
+* [Loaders](https://uiball.com/loaders/)
+* [React](https://es.reactjs.org/)
+* [Sweet Alert 2](https://sweetalert2.github.io/)
+* [FireBase](https://firebase.google.com/?hl=es) 
+
+## Autor ✒️
+* **Denis Mamani** [Linkedln](https://www.linkedin.com/in/denis-mamani/)
+
+## Expresiones de Gratitud 🎁
+
+* **Profesor:** [Alex Marin](https://www.linkedin.com/in/alexmarinmendez/) (React)
+* **Tutor:** [Nicolás Krein](https://www.linkedin.com/in/nicol%C3%A1s-krein-werle-810595191/) (React)
 
