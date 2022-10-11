@@ -28,6 +28,7 @@ npm start
 ## Construido con 🛠️
 * HTML
 * JavaScript
+* [Loaders](https://uiball.com/loaders/)
 * [React](https://es.reactjs.org/)
 * [Sweet Alert 2](https://sweetalert2.github.io/)
 * [FireBase](https://firebase.google.com/?hl=es) 
